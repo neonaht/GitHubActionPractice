@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "fireship-lessons"
-  }
+    "default": "se-2-76f62",
+    "prod": "se-2-76f62"
+  },
+  "targets": {},
+  "etags": {}
 }
