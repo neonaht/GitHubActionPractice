@@ -1,0 +1,45 @@
+[debug] [2025-04-06T16:50:32.622Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T16:50:32.624Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\neoou\Project\SE2\225-github-actions-demo\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-04-06T16:50:32.624Z] CLI Version:   14.1.0
+[debug] [2025-04-06T16:50:32.624Z] Platform:      win32
+[debug] [2025-04-06T16:50:32.624Z] Node Version:  v20.16.0
+[debug] [2025-04-06T16:50:32.625Z] Time:          Sun Apr 06 2025 23:50:32 GMT+0700 (Indochina Time)
+[debug] [2025-04-06T16:50:32.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T16:50:32.756Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T16:50:32.756Z] > authorizing via signed-in user (neo.ounsopa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\neoou\Project\SE2\225-github-actions-demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-06T16:50:34.518Z] Using project from CLI flag: fireship-lessons
+[debug] [2025-04-06T16:50:34.520Z] Checked if tokens are valid: true, expires at: 1743961146679
+[debug] [2025-04-06T16:50:34.521Z] Checked if tokens are valid: true, expires at: 1743961146679
+[debug] [2025-04-06T16:50:34.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons [none]
+[debug] [2025-04-06T16:50:35.423Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons 403
+[debug] [2025-04-06T16:50:35.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-04-06T16:50:35.423Z] Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 403, The caller does not have permission
+[debug] [2025-04-06T16:50:35.625Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\neoou\Project\SE2\225-github-actions-demo\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\neoou\Project\SE2\225-github-actions-demo\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project fireship-lessons. Please make sure the project exists and your account has permission to access it.
